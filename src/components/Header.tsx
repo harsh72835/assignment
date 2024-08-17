@@ -1,4 +1,4 @@
-import { Heart, ShoppingCart } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import useCartStore from "@/common/store";
@@ -11,11 +11,11 @@ const Header = () => {
         <span className="font-bold">E-commerce</span>
       </Link>
       <div className="flex align-middle justify-center gap-4">
-        <Link to={"your-wishlist"}>
+        {/* <Link to={"your-wishlist"}>
           <Button className="flex align-middle gap-2" variant={"outline"}>
             <Heart />
           </Button>
-        </Link>
+        </Link> */}
         {!isCartPageOpen && (
           <Link to={"your-cart"} onClick={() => setIsCartPageOpen(true)}>
             <Button className="flex align-middle gap-2">
