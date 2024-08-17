@@ -9,7 +9,7 @@ export const calculatePercentageValue = (
   originalValue: number,
   percentageValue: number
 ) => {
-  return (+originalValue - +(originalValue * percentageValue) / 100)
-    .toFixed(2)
-    .toLocaleString();
+  return (+originalValue - +(originalValue * percentageValue) / 100).toFixed(2);
 };
+
+export const calculateTotalValueWithPercentage = () => {};
